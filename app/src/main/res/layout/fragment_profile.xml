@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_register_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:text="Profile"
+                android:textColor="@color/purple_700"
+                android:textSize="42sp" />
+
+            <TextView
+                android:id="@+id/edt_register_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_register_label"
+                android:inputType="textEmailAddress"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="45dp"
+                android:hint="Email"
+                android:textAlignment="center"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:id="@+id/edt_register_FullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_register_email"
+                android:inputType="textPersonName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="45dp"
+                android:hint="@string/hint_FullName"
+                android:textAlignment="center"
+                android:textSize="25sp" />
+
+
+
+            <TextView
+                android:id="@+id/edt_register_Location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_register_FullName"
+                android:inputType="text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="45dp"
+                android:hint="@string/hint_Location"
+                android:textAlignment="center"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/txt_date_of_birthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_register_Location"
+                android:inputType="text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="45dp"
+                android:text="@string/date_of_birth"
+                android:textAlignment="center"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/txt_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_date_of_birthday"
+                android:inputType="text"
+                android:layout_marginTop="45dp"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:text="Gender:"
+                android:textSize="25sp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
